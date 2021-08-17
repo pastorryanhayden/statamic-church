@@ -1,0 +1,23 @@
+title: 'Church Information'
+data:
+  church_name: 'First Christian Church'
+  church_logo: FCCLogo.jpg
+  church_phone: '(217) 234-2928'
+  church_email: fcchurch@consolidated.net
+  street: '1600 Wabash Avenue'
+  city: Mattoon
+  state: IL
+  zip: '61938'
+  ind_services:
+    -
+      day_of_week: Sunday
+      time: '8:00 AM'
+      title: 'Worship Service'
+      type: service
+      enabled: true
+    -
+      day_of_week: Sunday
+      time: '10:00 AM'
+      title: 'Worship Service'
+      type: service
+      enabled: true

@@ -1,0 +1,18 @@
+<html lang="{{ site:short_locale }}">
+<head>
+    <meta charset="UTF-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <link href="/css/tailwind.css" rel="stylesheet">
+       <script src="//unpkg.com/alpinejs" defer></script>
+       <title>{{ title ?? site:name }}</title>
+    </head>
+    <body>
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <div class="relative bg-gray-50" >
+    {{ partial:partials/_nav }}
+    {{ template_content }}
+    </div>
+    {{ partial:partials/_footer }}
+    <script src="/js/site.js"></script>
+    </body>
+    </html>

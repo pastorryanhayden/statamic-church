@@ -1,0 +1,107 @@
+hide: true
+title: 'Home Page'
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: header_line_1
+        field:
+          input_type: text
+          antlers: false
+          default: 'Find meaning and mission'
+          display: 'Header Line 1'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: header_line_2
+        field:
+          input_type: text
+          antlers: false
+          default: 'in following Jesus Christ'
+          display: 'Header Line 2'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: header_image
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Header Image'
+          type: assets
+          icon: assets
+          listable: hidden
+      -
+        handle: header_paragraph
+        field:
+          antlers: false
+          default: 'For over seventy years, First Christian Church has been pointing people to Christ and watching Him change lives in Mattoon, IL. Join us this Sunday.'
+          display: 'Header Paragraph'
+          type: textarea
+          icon: textarea
+          listable: hidden
+      -
+        handle: content
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          display: Content
+          type: bard
+          icon: bard
+          listable: hidden
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+          listable: hidden
+          input_type: text
+          antlers: false
+          default: Home
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true

@@ -1,0 +1,63 @@
+title: Announcements
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: important
+        field:
+          default: false
+          display: Important
+          type: toggle
+          icon: toggle
+          instructions: 'Announcements marked important will show on the home page above all over content.'
+          listable: hidden
+      -
+        handle: featured_image
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Featured Image'
+          type: assets
+          icon: assets
+          listable: hidden
+      -
+        handle: short_description
+        field:
+          antlers: false
+          display: 'Short Description'
+          type: textarea
+          icon: textarea
+          listable: hidden
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required

@@ -1,0 +1,188 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: church_name
+        field:
+          input_type: text
+          antlers: false
+          display: 'Church Name'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: church_logo
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Church Logo'
+          type: assets
+          icon: assets
+          listable: hidden
+      -
+        handle: church_phone
+        field:
+          input_type: tel
+          antlers: false
+          display: 'Church Phone'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: church_email
+        field:
+          input_type: email
+          antlers: false
+          display: 'Church Email'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: facebook
+        field:
+          input_type: url
+          antlers: false
+          display: Facebook
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: youtube
+        field:
+          input_type: url
+          antlers: false
+          display: YouTube
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: give_online_llink
+        field:
+          input_type: url
+          antlers: false
+          display: 'Give Online Llink'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: watch_live_link
+        field:
+          input_type: url
+          antlers: false
+          display: 'Watch Live Link'
+          type: text
+          icon: text
+          listable: hidden
+  address:
+    display: Address
+    fields:
+      -
+        handle: street
+        field:
+          placeholder: '717 S. 34th Street'
+          input_type: text
+          antlers: false
+          display: Street
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: street_2
+        field:
+          placeholder: 'Apt. 3'
+          input_type: text
+          antlers: false
+          display: 'Street 2'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: city
+        field:
+          placeholder: Mattoon
+          input_type: text
+          antlers: false
+          display: City
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: state
+        field:
+          placeholder: IL
+          input_type: text
+          antlers: false
+          display: State
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: zip
+        field:
+          placeholder: '61938'
+          input_type: text
+          antlers: false
+          display: Zip
+          type: text
+          icon: text
+          listable: hidden
+  services:
+    display: Services
+    fields:
+      -
+        handle: ind_services
+        field:
+          collapse: false
+          sets:
+            service:
+              display: Service
+              fields:
+                -
+                  handle: day_of_week
+                  field:
+                    options:
+                      Sunday: Sunday
+                      Monday: Monday
+                      Tuesday: Tuesday
+                      Wednesday: Wednesday
+                      Thursday: Thursday
+                      Friday: Friday
+                      Saturday: Saturday
+                    multiple: false
+                    clearable: false
+                    searchable: true
+                    taggable: false
+                    push_tags: false
+                    cast_booleans: false
+                    display: Day
+                    type: select
+                    icon: select
+                    instructions: 'Choose a day'
+                    listable: hidden
+                -
+                  handle: time
+                  field:
+                    placeholder: '8:00 AM'
+                    input_type: text
+                    antlers: false
+                    display: Time
+                    type: text
+                    icon: text
+                    listable: hidden
+                -
+                  handle: title
+                  field:
+                    placeholder: 'Worship Service'
+                    input_type: text
+                    antlers: false
+                    display: Title
+                    type: text
+                    icon: text
+                    listable: hidden
+          display: Replicator
+          type: replicator
+          icon: replicator
+          listable: hidden
