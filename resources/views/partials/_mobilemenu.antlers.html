@@ -13,7 +13,9 @@
         <div class="pt-5 pb-6 px-5">
           <div class="flex items-center justify-between">
             <div>
+              <a href="/">
               <img class="h-8 w-auto" src="{{church_information:church_logo:url}}" alt="Workflow">
+            </a>
             </div>
             <div class="-mr-2">
               <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" @click="open = false">
@@ -27,7 +29,7 @@
           </div>
           <div class="mt-6">
             <nav class="grid gap-y-8">
-              <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+              <a href="/#plan-visit" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                 <!-- Heroicon name: outline/chart-bar -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-6 w-6 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
@@ -37,8 +39,9 @@
                   Plan A Visit
                 </span>
               </a>
-
-              <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+              {{collection:announcements as="posts" }}
+              {{if posts }}
+              <a href="/announcement" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                 <!-- Heroicon name: outline/cursor-click -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-6 w-6 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -47,7 +50,8 @@
                   Events and Announcements
                 </span>
               </a>
-
+              {{/if}}
+              {{/collection:announcements }}
     <!--
               <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
 

@@ -1,7 +1,8 @@
 title: Announcements
-template: default
+template: announcement
 layout: layout
 revisions: false
+route: '/announcement/{slug}'
 date: true
 sort_dir: asc
 date_behavior:

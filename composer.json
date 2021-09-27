@@ -12,7 +12,7 @@
         "laravel/tinker": "^2.0",
         "simonhamp/statamic-heroicons": "^1.0",
         "spatie/statamic-algolia-places": "^1.1",
-        "statamic/cms": "3.1.*"
+        "statamic/cms": "3.2.8"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.5",

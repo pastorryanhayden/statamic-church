@@ -68,12 +68,15 @@
                   Newsletter
                 </a>
               </li>
-
+              {{collection:announcements as="posts" }}
+              {{if posts }}
               <li>
                 <a href="#" class="text-base text-gray-500 hover:text-gray-900">
                   Announcements
                 </a>
               </li>
+              {{/if}}
+              {{/collection:announcements }}
             </ul>
           </div>
 

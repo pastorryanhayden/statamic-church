@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: 'Ball Brothers'
 size: 6928334
-last_modified: 1629227084
+last_modified: 1629288615
 width: 5517
 height: 3678
 mime_type: image/jpeg

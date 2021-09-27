@@ -1,7 +1,7 @@
 <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="flex justify-between items-center py-6 lg:justify-start lg:space-x-10">
         <div class="flex justify-start lg:w-0 lg:flex-1">
-          <a href="#">
+          <a href="/">
             <span class="sr-only">First Christian Church</span>
             <img class="h-8 w-auto sm:h-10" src="{{church_information:church_logo:url}}" alt="">
           </a>
@@ -17,12 +17,16 @@
         </div>
         <nav class="hidden lg:flex lg:space-x-10">
 
-          <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
+          <a href="/#plan-visit" class="text-base font-medium text-gray-500 hover:text-gray-900">
           Plan A Visit
         </a>
-          <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
+        {{collection:announcements as="posts" }}
+        {{if posts }}
+          <a href="/announcement" class="text-base font-medium text-gray-500 hover:text-gray-900">
             Events/Announcements
           </a>
+          {{/if}}
+          {{/collection:announcements }}
 
           <div class="relative" x-data="{ resources: false }">
             <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->

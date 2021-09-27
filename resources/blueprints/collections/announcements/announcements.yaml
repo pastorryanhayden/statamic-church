@@ -1,4 +1,4 @@
-title: Announcements
+title: Announcement
 sections:
   main:
     display: Main
@@ -30,6 +30,10 @@ sections:
           type: assets
           icon: assets
           listable: hidden
+          instructions_position: above
+          container: assets
+          show_filename: true
+          folder: /
       -
         handle: short_description
         field:
