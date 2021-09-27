@@ -129,6 +129,16 @@ sections:
           type: text
           icon: text
           listable: hidden
+      -
+        handle: map_embed
+        field:
+          antlers: false
+          display: 'Map Embed'
+          type: textarea
+          icon: textarea
+          instructions: 'Paste embed from Google Maps (or similar service) here.'
+          listable: hidden
+          instructions_position: above
   services:
     display: Services
     fields:
