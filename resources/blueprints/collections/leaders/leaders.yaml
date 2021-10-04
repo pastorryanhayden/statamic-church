@@ -11,6 +11,24 @@ sections:
           validate:
             - required
       -
+        handle: type
+        field:
+          options:
+            pastor: pastor
+            deacon: deacon
+            staff: staff
+          multiple: false
+          clearable: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          display: Type
+          type: select
+          icon: select
+          listable: hidden
+          instructions_position: above
+      -
         handle: role
         field:
           placeholder: 'Assistant Pastor'
